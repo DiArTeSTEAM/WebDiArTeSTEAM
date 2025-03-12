@@ -1,2 +1,5 @@
-# WebDiArTe
-Web principal de DiArTe
+# DiArTeSTEAM
+Web principal de DiArTeSTEAM
+Diseño y Arte con Tecnologías STEAM
+
+En esta web se describirá en que se basa dicho proyecto y se propondrán formaciones específicas para aplicar la tecnología en centros educativos de Arte y Diseño.
