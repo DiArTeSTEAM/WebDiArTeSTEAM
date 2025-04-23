@@ -1,37 +1,131 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DiArTeSTEAM</title>
-</head>
-<body>
+    <link rel="icon" type="image/ico" href="img/favicon.ico">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <figure>
-                <img src="./img/DiArTeSTEAM-Logo.png" alt="Logotipo del proyecto de innovación Diseño y Arte con nuevas Tecnologías a partir de metodologías STEAM - DiArTeSTEAM">
-            </figure>
-        </div>
+      <div class="logo">
+        <figure>
+          <img
+            src="./img/DiArTeSTEAM-Logo.png"
+            alt='Logotipo del Proyecto de Innovación "Diseño y Arte con nuevas Tecnologías a partir de metodologías STEAM - DiArTeSTEAM"'
+          />
+        </figure>
+      </div>
 
-        <nav>
-            <ul>
-                <li>Inicio</li>
-                <li>Proyecto</li>
-                <li>Documentación</li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Inicio</a>
+          </li>
+          <li>
+            <a href="#">Proyecto</a>
+          </li>
+          <li>
+            <a href="#">Documentación</a>
+          </li>
+          <li>
+            <a href="#">Difusión</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <h1>Diseño y Arte con nuevas Tecnologías a partir de metodologías STEAM</h1>
-        <h2>DiArTeSTEAM</h2>
+      <section class="hero-main-page">
+<!--         <figure>
+          <img
+            src=""
+            alt="Fondo de la sección hero con una foto de evento Comella Llum 2025"
+          />
+        </figure> -->
+        <video  autoplay muted loop playisnline class="video-background">
+          <source src="video/Cumella Llum 2025.webm" type="video/webm">
+          <source src="video/Cumella Llum 2025.mp4" type="video/mp4">          
+          Tu navegador no soporta este vídeo</video>
 
-        <h2>En fase de desarrollo y construcción, en breve tendremos toda la información del proyecto</h2>
+        <div class="titulo" id="titulo">
+          <h1>
+            Diseño y Arte con nuevas Tecnologías a partir de metodologías STEAM
+          </h1>
+        </div>
 
+      </section>
+
+      <section id="proyect-description" class="proyect-description-main-page">
+        <article>
+          <p>
+          Proyecto educativo innovador que integra arte, tecnología y sostenibilidad en centros de FP de arte y diseño. Mediante el uso de iluminación Neopixel, realidad virtual, redes LoRa y técnicas digitales avanzadas, fomentamos la creatividad y el aprendizaje interdisciplinar.
+          Esta iniciativa incluye exposiciones en Nueva York y Tarragona, promoviendo la colaboración entre estudiantes, docentes y empresas en un ecosistema de innovación.
+        </p>
+        </article>
+      </section>
+
+      <section id="document" class="document-main-page">
+        <h3>Documentación</h3>
+        <p>
+          Se irá creando y publicando documentación formativa de distintos proyectos aplicables al arte usando tecnologías como ESP32 Steamakers, LoRa, DMX, etc...
+        </p>
+      </section>
+
+      <section id="diffusion" class="diffusion-main-page">
+        <h3>Difusión</h3>
+        <p>
+          La difusión del proyecto se realiza a través de las distintas RRSS, página web y eventos que se están realizando a nivel nacional e internacional
+        </p>
+      </section>
     </main>
 
     <footer>
+<!--       <div class="footer-form-subscription">
+        <h3>Recibir novedades</h3>
+        <form action="" method="post">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Escribe tu email"
+          />
+          <button type="submit" id="form-suscription-button">Enviar</button>
+        </form>
+      </div> -->
+      <div>
+        <ul>
+          <h3>Sigue nuestro proyecto</h3>
+          <li>
+            <a href="#">Instagram</a>
+          </li>
+          <li>
+            <a href="#">TikTok</a>
+          </li>
+          <li>
+            <a href="#">X (Twitter)</a>
+          </li>
+          <li>
+            <a href="#">Github</a>
+          </li>
+        </ul>
+      </div>      
 
+      <figure class="banner-organismos">
+        <img src="./img/Banner Organismos.png" alt="logotipos administraciones publicas que subvencionan el proyecto">
+      </figure>
+
+      <figure class="banner-participantes">
+        <img src="./img/Banner participantes proyecto.png" alt="Logotipos de las entidadesy centros educativos que participan en el proyecto.">
+      </figure>
+
+      <figure class="CCBY-SA">
+        <img
+          src="./img/Logo CC BY-SA 40.png"
+          alt="Logo Creative Commons - Atribución/Reconocimiento Compartirigual 4.0 Licencia Pública Internacional -- CC BY-SA 4.0"
+        />
+      </figure>
     </footer>
-</body>
+  </body>
 </html>

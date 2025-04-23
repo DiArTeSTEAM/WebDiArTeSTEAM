@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Andika';
+    src: url(./fonts/Andika-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Andika Bold';
+    src: url(./fonts/Andika-Bold.ttf);
+    font-weight: bold;
+    font-style:normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Andika', monospace, 'Courier New', Courier;
+    font-size: 18px;    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Andika Bold', monospace, 'Courier New', Courier;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    min-width: 425px;
+    background-color: rgb(13, 13, 13);
+    color: whitesmoke;
+    margin: 0 auto;
+}
+
+header .logo img{
+    margin-top: 10px;
+    width: 75%;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    padding: 10px 0px;
+}
+
+header nav ul li{
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 425px;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.hero-main-page {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.hero-main-page .video-background {
+    width: 100%;
+    background-color: black;
+    opacity: 60%;
+}
+
+.hero-main-page .titulo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+
+.hero-main-page h1 {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.proyect-description-main-page, .document-main-page, .diffusion-main-page {
+    width: 90%;
+    padding: 1rem 0;
+}
+
+footer {
+    width: 100%;    
+    max-width: 1200px;
+    min-width: 425px;
+    margin: 0 auto;
+}
+
+footer .banner-organismos img, footer .banner-participantes img {
+    width: 100%;
+}
+
+footer .CCBY-SA{
+    text-align: center;
+    width: 100%;
+}
+
+footer .CCBY-SA img{
+    width: 100px;
+}
+
+
+
+/* Apartado responsive para cuando se vea en pantallas grandes */
+
+
+@media (min-width: 800px){
+    html {
+        font-size: 20px;
+    }
+    /* Menú principal responsive para pantallas grandes */
+    header nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* H1 responsive para pantallas más grandes */
+    .hero-main-page h1{
+        padding: 1.5rem;
+        font-size: 2.5rem;
+    }
+
+    /* Tamaño logo Creative Commons */
+    footer .CCBY-SA img{
+        width: 200px;
+    }
+}
